@@ -1,0 +1,357 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+transition:0.4s;
+}
+
+.light-mode{
+background:#f4f4f4;
+color:black;
+}
+
+header{
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:inherit;
+font-weight:bold;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 10%;
+}
+
+.hero-text h1{
+font-size:45px;
+}
+
+.hero-text span{
+color:#38bdf8;
+}
+
+.hero img{
+width:250px;
+border-radius:50%;
+border:5px solid #38bdf8;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:10px 20px;
+background:#38bdf8;
+color:white;
+border-radius:20px;
+text-decoration:none;
+}
+
+.section{
+padding:60px 10%;
+text-align:center;
+}
+
+.skills{
+max-width:500px;
+margin:auto;
+}
+
+.skill{
+margin:15px 0;
+}
+
+.bar{
+height:10px;
+background:#ddd;
+border-radius:10px;
+overflow:hidden;
+}
+
+.progress{
+height:10px;
+background:#38bdf8;
+width:0;
+animation:load 2s forwards;
+}
+
+@keyframes load{
+from{width:0}
+to{width:var(--skill)}
+}
+
+.social a{
+margin:10px;
+display:inline-block;
+padding:10px 20px;
+background:#38bdf8;
+border-radius:20px;
+color:white;
+text-decoration:none;
+}
+
+.toggle{
+cursor:pointer;
+background:#38bdf8;
+padding:8px 15px;
+border-radius:20px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+}
+.projects{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.project-card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+width:280px;
+text-align:left;
+transition:0.3s;
+}
+
+.light-mode .project-card{
+background:white;
+}
+
+.project-card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.project-card h3{
+margin-bottom:10px;
+color:#38bdf8;
+}
+.achievements{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.achievement-card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+width:280px;
+transition:0.3s;
+}
+
+.light-mode .achievement-card{
+background:white;
+}
+
+.achievement-card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.achievement-card h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+/* Body */
+body{
+background:#0f172a;
+color:white;
+}
+
+/* Section Style */
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+h2{
+font-size:32px;
+margin-bottom:30px;
+}
+
+/* FLEX CONTAINER */
+.flex-container{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+gap:25px;
+}
+
+/* CARD DESIGN */
+.card{
+background:#1e293b;
+width:270px;
+padding:15px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+/* Images */
+.card img{
+width:100%;
+border-radius:8px;
+}
+
+/* Text */
+.card h3{
+margin-top:10px;
+}
+
+.card p{
+font-size:14px;
+margin-top:5px;
+}
+#internships{
+padding:60px 20px;
+text-align:center;
+background:#0f172a;
+}
+
+#internships h2{
+font-size:32px;
+margin-bottom:30px;
+}
+
+.internship-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+}
+
+.internship-card{
+background:#1e293b;
+padding:15px;
+border-radius:10px;
+width:280px;
+transition:0.3s;
+}
+
+.internship-card:hover{
+transform:scale(1.05);
+}
+
+.internship-card img{
+width:100%;
+border-radius:8px;
+}
+
+.internship-card h3{
+margin-top:10px;
+font-size:18px;
+}
+
+.internship-card p{
+font-size:14px;
+margin-top:5px;
+}
+#certificates{
+padding:60px 20px;
+text-align:center;
+background:#020617;
+}
+
+#certificates h2{
+font-size:32px;
+margin-bottom:30px;
+}
+
+.certificate-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+}
+
+.certificate-card{
+background:#1e293b;
+padding:15px;
+border-radius:10px;
+width:260px;
+transition:0.3s;
+}
+
+.certificate-card:hover{
+transform:scale(1.05);
+}
+
+.certificate-card img{
+width:100%;
+border-radius:8px;
+}
+
+.certificate-card p{
+margin-top:10px;
+font-size:16px;
+}
+.contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}
