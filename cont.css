@@ -52,8 +52,9 @@ color:#38bdf8;
 }
 
 .hero img{
-width:250px;
-border-radius:50%;
+width:305px;
+height: 310px;
+border-radius:60%;
 border:5px solid #38bdf8;
 }
 
